@@ -3,3 +3,11 @@
 body{
   font-family: "Jost", sans-serif;
 }
+
+header{
+  z-index: 10001 !important;
+}
+
+.btn-primary{
+  @apply py-2 text-white transition-all duration-300 rounded px-7 bg-brandPrimary hover:bg-neutralDGrey hover:translate-y-4 ;
+}

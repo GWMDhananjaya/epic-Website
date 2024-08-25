@@ -35,12 +35,12 @@ function Navbar() {
         {link: "shop", path: "shop"},
     ]
   return (
-    <header className='fixed top-0 left-0 right-0 w-full bg-white md:bg-transparent'>
+    <header className='fixed top-0 left-0 right-0 w-full bg-green-50 '>
         <nav className={`px-4 py-4 lg:px-14 ${isSticky ? "sticky top-0 left-0 right-0 border-b bg-white duration-300 " : ""}`}>
             <div className='flex items-center justify-between gap-8 text-base'>
-                <a href="" className='space-x-3 text-2xl item-center bg-slate-400'>
-                    <img src={logo} className='inline-block w-32 item-center'>
-                    </img>
+                <a href="" className='space-x-3 text-4xl font-semibold item-center'>
+                    {/* <img src={logo} className='inline-block w-32 shadow-2xl item-center'/> */}
+                    <span className='text-[#263238]'>epic</span>
                 </a>
 
                 <ul className='hidden space-x-12 md:flex'>
