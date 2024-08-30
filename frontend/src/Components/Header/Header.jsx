@@ -6,6 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 
 function Header() {
   return (
+    <div className={css.topcontainer}>
     <div className={css.container}>
       <div className={css.logo}>
         <img src={logo} alt="" />
@@ -24,10 +25,11 @@ function Header() {
 
         </div>
 
-        <input type="text" className={css.search} />
+        
 
         <TiShoppingCart  className={css.cart}/>
       </div>
+    </div>
     </div>
   )
 }

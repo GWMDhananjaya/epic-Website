@@ -1,11 +1,23 @@
 .container{
-    padding: 1.5rem;
+    padding: 0.1rem;
     display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+   
+    box-shadow: var(--shadow1);
+    border-radius: 10px; 
+  
+
+}
+.topcontainer{
+    padding: 15px;
+    
 }
 
 .logo{
     display: flex;
     align-items: center;
+    flex: 1;
+    margin-left: 20px;
 }
 
 .logo>img{
@@ -19,6 +31,7 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    margin-right: 20px;
 }
 
 .menu{
@@ -32,4 +45,9 @@
 .menu>li:hover{
     color: aliceblue;
     cursor: pointer;
+}
+
+.cart {
+    height: 1.5rem;
+    width: 1.5rem;
 }
