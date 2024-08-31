@@ -1,11 +1,10 @@
-import React ,{ useRef } from 'react'
+import React from 'react'
 import css from './Header.module.css'
 import logo from '../../assets/logo.png'
 import { TiShoppingCart } from "react-icons/ti";
-import About from '../About/About';
 
-function Header({ scrollToAbout }) {
 
+function Header() {
   return (
     <div className={css.topcontainer}>
     <div className={css.container}>
@@ -17,7 +16,7 @@ function Header({ scrollToAbout }) {
       <div className={css.right}>
         <div className={css.menu}>
           <ul className={css.menu}>
-            <li><a href="#about" onClick={scrollToAbout}>About</a></li>
+            <li>About</li>
             <li>Contact</li>
             <li>Location</li>
             <li>Product</li>
@@ -31,11 +30,8 @@ function Header({ scrollToAbout }) {
         <TiShoppingCart  className={css.cart}/>
       </div>
     </div>
-  
-   
-
     </div>
-  );
+  )
 }
 
 export default Header

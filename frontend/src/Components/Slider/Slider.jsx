@@ -18,7 +18,7 @@ function Slider() {
         pagination={{ clickable: true }}
         slidesPerView={3}
         spaceBetween={40}
-        slidesPerGroup={1}
+        slidesPerGroup={2}
         loop={true} // Remove loopFillGroupWithBlank
       >
         {SliderProducts.map((slide, index) => (

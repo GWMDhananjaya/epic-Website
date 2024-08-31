@@ -1,0 +1,35 @@
+.Virtual{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    text-align: center;
+    
+}
+
+.left>:nth-child(1){
+    font-size: 2rem;
+    
+    display: block;
+    font-weight: bold;
+}
+
+.left>:nth-child(2){
+    font-size: 1.1rem;
+    
+    display: block;
+    width: 30rem;
+}
+
+.wrapper{
+    width: 30rem;
+}
