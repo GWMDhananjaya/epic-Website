@@ -57,7 +57,20 @@
     box-shadow: var(--shadow1);
 }
 
+.signup>:first-child{
+    display: block;
+    width: 6rem;
+}
 
+.signup>:nth-child(2){
+    border-radius: 50%;
+    border: 1px solid rgb(0, 255, 47);
+    display: flex;
+    width:20px;
+    height: 20px;
+    padding: 5px;
+    align-items: center;
+}
 
 
 
