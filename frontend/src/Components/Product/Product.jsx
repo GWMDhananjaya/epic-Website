@@ -8,6 +8,9 @@ function Product() {
 
     const [MenuProducts, setMenuProducts ] = useState(ProductsData); 
 
+    const filter = (type) => {
+        setMenuProducts(ProductsData.filter((product)=>product.type === type))
+    }
   return (
     <div className={css.container}>
         
@@ -15,16 +18,24 @@ function Product() {
 
         <div className={css.products}>
             <ul className={css.menu}>
-                <li>All</li>
-                <li>Modification Parts</li>
+                <li onClick={()=>setMenuProducts(ProductsData)}>All</li>
+                <li onClick={()=>filter("skin care")}>Modification Parts</li>
                 <li>Lights</li>
             </ul>
 
             <div className={css.list}>
                 {
                     MenuProducts.map(( product , i ) =>(
-                        <div className={css.Product}>
-                            Product
+                        <div className={css.product}>
+                            <div className='left-s'>
+                                <div className='name'>
+                                    <span>{product.name}</span>
+                                    <span>{product.detail}</span>
+                                </div>
+                                <span>{product.price}$</span>
+                                <div>Shop now</div>
+                            </div>
+                            <img src={product.img} alt="" className='img-p'/>
                         </div>
                     ))
                 }
