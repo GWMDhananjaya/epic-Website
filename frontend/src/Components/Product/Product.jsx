@@ -4,8 +4,10 @@ import css from "./Product.module.css"
 import {ProductsData} from "../../data/products";
 
 
-function Product() {
+import { useAutoAnimate } from '@formkit/auto-animate/react'
 
+function Product() {
+    const [parent] = useAutoAnimate()
     const [MenuProducts, setMenuProducts ] = useState(ProductsData); 
 
     const filter = (type) => {
@@ -23,7 +25,7 @@ function Product() {
                 <li>Lights</li>
             </ul>
 
-            <div className={css.list}>
+            <div className={css.list} ref={parent}>
                 {
                     MenuProducts.map(( product , i ) =>(
                         <div className={css.product}>
