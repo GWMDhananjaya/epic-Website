@@ -47,6 +47,9 @@
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
+    padding-bottom:1.5rem;
+    
+   
 }
 
 .carousal{
@@ -56,4 +59,41 @@
 .tCarousel{
     padding: 2rem;
 
+}
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 1rem; /* Added extra top padding */
+    gap: 1rem;
+    box-shadow: 0 12px 35px -13px #013609;
+}
+
+.testimonial>img {
+    position: absolute!important;
+    width: 4rem!important;
+    top: .5rem!important; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%; /* If you want a circular image */
+}
+
+
+.testimonial>span:nth-of-type(1) {
+    align-items: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    margin-top: 3rem; 
+}
+
+.testimonial>hr{
+    height: 1px;
+    width: 80%;
+    background: rgb(198,198,198);
+    border: none;
 }
